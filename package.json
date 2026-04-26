@@ -1,0 +1,92 @@
+{
+  "name": "@keystatic/templates-astro",
+  "version": "0.0.63",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Thinkmill/keystatic/",
+    "directory": "templates/astro"
+  },
+  "dependencies": {
+    "@astrojs/markdoc": "^0.12.9",
+    "@astrojs/react": "^4.2.0",
+    "@types/react": "^19.0.8",
+    "@types/react-dom": "^19.0.3",
+    "astro": "^5.2.5",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "@keystatic/astro": "^5.0.6",
+    "@keystatic/core": "^0.5.50"
+  },
+  "devDependencies": {
+    "@types/gtag.js": "^0.0.20",
+    "@types/node": "^24.1.0",
+    "@typescript-eslint/eslint-plugin": "^8.53.0",
+    "@typescript-eslint/parser": "^8.53.0",
+    "cross-env": "^7.0.3",
+    "eslint": "^9.34.0",
+    "eslint-config-airbnb-extended": "^2.2.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-import-resolver-typescript": "^4.4.4",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-prettier": "^5.5.4",
+    "prettier": "^3.6.2",
+    "rimraf": "^6.0.1",
+    "tsconfig-paths": "^4.2.0",
+    "tsx": "^4.21.0",
+    "typescript": "^6.0.2"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "packageManager": "pnpm@10.33.1",
+  "eslintConfig": {
+    "plugins": [
+      "jest",
+      "eslint-plugin-tsdoc"
+    ],
+    "extends": [
+      "airbnb",
+      "airbnb-typescript",
+      "plugin:jest/recommended",
+      "plugin:prettier/recommended"
+    ],
+    "ignorePatterns": [
+      "/dist"
+    ],
+    "rules": {
+      "react/jsx-props-no-spreading": "off",
+      "react/jsx-uses-react": "off",
+      "react/react-in-jsx-scope": "off",
+      "react/require-default-props": [
+        "error",
+        {
+          "forbidDefaultForRequired": true,
+          "functions": "defaultArguments"
+        }
+      ],
+      "no-param-reassign": [
+        "error",
+        {
+          "props": true,
+          "ignorePropertyModificationsFor": [
+            "state"
+          ]
+        }
+      ],
+      "prettier/prettier": "error",
+      "import/order": "error"
+    },
+    "settings": {
+      "import/resolver": "typescript"
+    }
+  },
+  "prettier": {
+    "singleQuote": true
+  }
+}

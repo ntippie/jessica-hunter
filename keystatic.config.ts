@@ -1,11 +1,8 @@
 import { config, fields, collection } from '@keystatic/core';
 
 export default config({
+  storage: { kind: 'cloud' },
   cloud: { project: 'jessica-hunter/jessica-hunter' },
-  storage: {
-    kind: 'github',
-    repo: { owner: 'ntippie', name: 'jessica-hunter' },
-  },
   collections: {
     posts: collection({
       label: 'Posts',

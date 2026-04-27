@@ -6,10 +6,6 @@ import keystatic from '@keystatic/astro';
 // https://astro.build/config
 export default defineConfig(({ command }) => ({
   site: 'https://jessica-hunter.com',
-  integrations: [
-    react(),
-    markdoc(),
-    ...(command === 'dev' ? [keystatic()] : []),
-  ],
+  integrations: [react(), markdoc(), keystatic()],
   output: 'static',
 }));

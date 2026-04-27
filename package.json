@@ -9,14 +9,14 @@
   },
   "dependencies": {
     "@astrojs/markdoc": "^0.12.9",
-    "@astrojs/react": "^4.2.0",
+    "@astrojs/react": "^5.0.4",
+    "@keystatic/astro": "^5.0.6",
+    "@keystatic/core": "^0.5.50",
     "@types/react": "^19.0.8",
     "@types/react-dom": "^19.0.3",
     "astro": "^5.2.5",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "@keystatic/astro": "^5.0.6",
-    "@keystatic/core": "^0.5.50"
+    "react-dom": "^19.0.0"
   },
   "devDependencies": {
     "@types/gtag.js": "^0.0.20",
@@ -42,7 +42,8 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "clean": "rimraf dist .astro node_modules"
   },
   "packageManager": "pnpm@10.33.1",
   "eslintConfig": {
